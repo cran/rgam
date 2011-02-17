@@ -1,0 +1,2 @@
+useDynLib(rgam)
+exportPattern("^[[:alpha:]]+")
