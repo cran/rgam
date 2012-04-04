@@ -1,7 +1,7 @@
 \name{predict.rgam}
 \alias{predict.rgam}
 \title{Predict method for RGAM fits}
-\usage{predict.rgam(object, type=c("link", "response", "terms"), ...)}
+\usage{\method{predict}{rgam}(object, type=c("link", "response", "terms"), ...)}
 \description{Obtains predictions from a robustly fitted generalized
 additive model object}
 \details{Serves as the extractor function on objects of class
