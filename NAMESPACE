@@ -1,2 +1,3 @@
 useDynLib(rgam)
 exportPattern("^[[:alpha:]]+")
+importFrom(Rcpp, evalCpp)
