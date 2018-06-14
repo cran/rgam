@@ -17,10 +17,10 @@ Maintainer: Davor Cubranic <cubranic@stat.ubc.ca>
 }
 
 \references{
-  Azadeh, A. and Salibian-Barrera, M. (2011).
+  Azadeh, A. and Salibian-Barrera, M. (2012).
   \emph{An outlier-robust fit for Generalized Additive Models with
     applications to disease outbreak detection.}
-  To appear in the Journal of the American Statistical Association.
+  Journal of the American Statistical Association. 106(494): 719-731.
 }
 
 \keyword{ package }

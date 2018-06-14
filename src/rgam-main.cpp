@@ -139,3 +139,14 @@ RcppExport SEXP my_loess_fit(SEXP y_in,
   const vec foo = loess_fit(y, x, weights, span);
   return wrap(foo);
 }
+
+static const R_CallMethodDef CallEntries[] = {
+    {"rgam_p", (DL_FUNC) &rgam_p, 9},
+    {"rgam_b", (DL_FUNC) &rgam_b, 10},
+    {NULL, NULL, 0}
+};
+
+RcppExport void R_init_rgam(DllInfo *dll) {
+    R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
+    R_useDynamicSymbols(dll, FALSE);
+}

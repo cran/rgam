@@ -101,6 +101,7 @@
 #'     outbreak detection.} To appear in the Journal of
 #'   the American Statistical Association.
 #' @keywords models, regression, robust, smooth
+#' @export
 #' @examples
 #' x <- ili.visits$week
 #' y <- ili.visits$visits
@@ -245,6 +246,8 @@ rgam <- function(x, y,
 #' @title Predict method for RGAM fits
 #' @author Matias Salibian-Barrera \email{matias@@stat.ubc.ca}
 #'   and Davor Cubranic \email{cubranic@@stat.ubc.ca}
+#' @importFrom stats predict
+#' @export
 predict.rgam <- function (object, type = c('link', 'response', 'terms'), ...) {
   type <- match.arg(type)
 
